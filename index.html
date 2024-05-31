@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kids World letters</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome to the Kids World letters</h1>
+      <p>How many letters would you like to learn today?</p>
+      <input
+        class="input-field"
+        id="letterCount"
+        type="number"
+        placeholder="1-26"
+        min="1"
+        max="26"
+      />
+      <button class="btn" onclick="generateLetters()">Learn Letters</button>
+      <div id="lettersContainer"></div>
+    </div>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 id="modalLetter"></h2>
+        <img id="modalImage" src="" alt="Letter Image" />
+        <p id="modalWord"></p>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
